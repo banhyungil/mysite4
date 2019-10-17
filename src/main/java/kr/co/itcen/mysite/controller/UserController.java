@@ -98,7 +98,16 @@ public class UserController {
 		session.setAttribute("authUser", vo);
 		return "redirect:/";
 	}
-
+	
+	@RequestMapping(value="/auth", method=RequestMethod.POST)
+	public void auth() {
+		
+	}
+	
+	@RequestMapping(value="/logout", method=RequestMethod.GET)
+	public void logout() {
+		
+	}
 	//Controller 마다 둬야하므로 번거롭다
 	//	//AOP 기술이 적용된 Annotaion
 	//	@ExceptionHandler(UserDaoException.class)
